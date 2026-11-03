@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kruunun Beauty | Lyxig Skönhetssalong</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome för ikoner -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="gold-text">Kruunun Beauty</span>
+            </a>
+            
+            <nav class="navbar" id="navbar">
+                <a href="#facials" data-i18n="nav-facials">Ansiktsbehandlingar</a>
+                <a href="#manicure" data-i18n="nav-manicure">Manikyr</a>
+                <a href="#pedicure" data-i18n="nav-pedicure">Pedikyr</a>
+                <a href="#pmu" data-i18n="nav-pmu">Permanent Makeup</a>
+                <a href="#microblading" data-i18n="nav-microblading">Microblading</a>
+                <a href="#contact" data-i18n="nav-contact">Kontakt</a>
+            </nav>
+
+            <div class="nav-right">
+                <!-- Språkväljare -->
+                <div class="lang-select-wrapper">
+                    <i class="fa-solid fa-globe gold-icon"></i>
+                    <select id="lang-switcher">
+                        <option value="sv">SV</option>
+                        <option value="fi">FI</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Meny">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="gold-heading" data-i18n="hero-title">Tidlös Elegans & Skönhet</h1>
+            <p data-i18n="hero-subtitle">Exklusiva skönhetsbehandlingar anpassade för dina unika drag i en avkopplande miljö.</p>
+            <a href="#contact" class="btn btn-gold" data-i18n="hero-btn">Boka Tid</a>
+        </div>
+    </section>
+
+    <!-- Intro / Om oss -->
+    <section class="section about">
+        <div class="container text-center">
+            <h2 class="gold-heading" data-i18n="about-title">Välkommen till Kruunun Beauty</h2>
+            <div class="gold-divider"></div>
+            <p class="section-desc" data-i18n="about-desc">Vi erbjuder professionella skönhetsbehandlingar med högsta precision och premiumprodukter. Låt oss ta hand om din hud, dina naglar och framhäva din naturliga skönhet.</p>
+        </div>
+    </section>
+
+    <!-- Behandlingar (Services) -->
+    <section class="section services-section">
+        <div class="container">
+            
+            <!-- Ansiktsbehandlingar -->
+            <div id="facials" class="service-category">
+                <h2 class="gold-heading" data-i18n="facials-title">Ansiktsbehandlingar</h2>
+                <div class="gold-divider"></div>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" alt="Ansiktsbehandling Premium">
+                        <div class="service-info">
+                            <h3 data-i18n="facial-1-title">Kruunun Signaturansikte</h3>
+                            <p data-i18n="facial-1-desc">Djuprengörande behandling med djupåterfuktande serum, enzympeeling och avkopplande ansiktsmassage.</p>
+                            <span class="price">1 200 SEK / 75 min</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1512290900673-70024421d9c6?auto=format&fit=crop&w=800&q=80" alt="Glow Facial">
+                        <div class="service-info">
+                            <h3 data-i18n="facial-2-title">Glow & Radiance Facial</h3>
+                            <p data-i18n="facial-2-desc">Ge huden maximal lyster med vitamin C-boost och mild fruktsyra-peeling.</p>
+                            <span class="price">950 SEK / 50 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manikyr -->
+            <div id="manicure" class="service-category">
+                <h2 class="gold-heading" data-i18n="manicure-title">Manikyr</h2>
+                <div class="gold-divider"></div>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80" alt="Manikyr">
+                        <div class="service-info">
+                            <h3 data-i18n="mani-1-title">Klassisk Manikyr med Gel lack</h3>
+                            <p data-i18n="mani-1-desc">Nagelbandsvård, formning av naglar, stärkande gellack och avslutande nagelolja.</p>
+                            <span class="price">650 SEK / 60 min</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80" alt="Spa Manikyr">
+                        <div class="service-info">
+                            <h3 data-i18n="mani-2-title">Lyxig Spa Manikyr</h3>
+                            <p data-i18n="mani-2-desc">Handskrubb, paraffinbad, handmassage samt formning och valfritt lackering.</p>
+                            <span class="price">800 SEK / 75 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pedikyr -->
+            <div id="pedicure" class="service-category">
+                <h2 class="gold-heading" data-i18n="pedicure-title">Pedikyr</h2>
+                <div class="gold-divider"></div>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=800&q=80" alt="Pedikyr">
+                        <div class="service-info">
+                            <h3 data-i18n="pedi-1-title">Medicinsk & Kosmetisk Pedikyr</h3>
+                            <p data-i18n="pedi-1-desc">Fotbad, avlägsnande av förhårdnader, nagelvård, fotmassage och gellack.</p>
+                            <span class="price">750 SEK / 60 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Permanent Makeup -->
+            <div id="pmu" class="service-category">
+                <h2 class="gold-heading" data-i18n="pmu-title">Permanent Makeup (PMU)</h2>
+                <div class="gold-divider"></div>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Läppigmentering">
+                        <div class="service-info">
+                            <h3 data-i18n="pmu-1-title">Lip Blush (Läpptatuering)</h3>
+                            <p data-i18n="pmu-1-desc">Framhäver läpparnas form och ger en naturlig, fräsch färg som håller länge.</p>
+                            <span class="price">3 500 SEK / 120 min</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1597225244660-1cd128c64284?auto=format&fit=crop&w=800&q=80" alt="Ögonbryn & Eyeliner">
+                        <div class="service-info">
+                            <h3 data-i18n="pmu-2-title">Eyeliner & Eyelash Liner</h3>
+                            <p data-i18n="pmu-2-desc">Pigmentering längs franskanten för en fylligare och mer definierad blick.</p>
+                            <span class="price">2 800 SEK / 90 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Microblading -->
+            <div id="microblading" class="service-category">
+                <h2 class="gold-heading" data-i18n="microblading-title">Microblading</h2>
+                <div class="gold-divider"></div>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=800&q=80" alt="Microblading Ögonbryn">
+                        <div class="service-info">
+                            <h3 data-i18n="micro-1-title">Microblading 3D Ögonbryn</h3>
+                            <p data-i18n="micro-1-desc">Manuell stråteknik för fylliga och naturliga ögonbryn anpassade efter din ansiktsform.</p>
+                            <span class="price">3 900 SEK / 150 min (Inkl. återbesök)</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=800&q=80" alt="Combination Brows">
+                        <div class="service-info">
+                            <h3 data-i18n="micro-2-title">Combo Brows (Strån + Skuggning)</h3>
+                            <p data-i18n="micro-2-desc">Kombination av microblading och puderskuggning för ett mer markerat resultat.</p>
+                            <span class="price">4 200 SEK / 150 min (Inkl. återbesök)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Kontakt & Bokning (Formspree + Google Maps) -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="gold-heading text-center" data-i18n="contact-title">Boka Tid & Kontakt</h2>
+            <div class="gold-divider"></div>
+            
+            <div class="contact-grid">
+                <!-- Formspree Formulär -->
+                <div class="contact-form-wrapper">
+                    <h3 class="gold-text" data-i18n="form-heading">Skicka en förfrågan</h3>
+                    <!-- ERSÄTT 'YOUR_FORMSPREE_ID' MED DITT FORMSPREE ENDPOINT -->
+                    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-i18n="form-name">Namn</label>
+                            <input type="text" id="name" name="name" required placeholder="Ditt namn">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="form-email">E-post</label>
+                            <input type="email" id="email" name="_replyto" required placeholder="din.epost@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service" data-i18n="form-service">Önskad behandling</label>
+                            <select id="service" name="service">
+                                <option value="Ansiktsbehandling" data-i18n="opt-facial">Ansiktsbehandling</option>
+                                <option value="Manikyr" data-i18n="opt-mani">Manikyr</option>
+                                <option value="Pedikyr" data-i18n="opt-pedi">Pedikyr</option>
+                                <option value="Permanent Makeup" data-i18n="opt-pmu">Permanent Makeup</option>
+                                <option value="Microblading" data-i18n="opt-micro">Microblading</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="form-message">Meddelande</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Skriv önskat datum, tid eller övriga frågor..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold" data-i18n="form-send">Skicka Förfrågan</button>
+                    </form>
+                </div>
+
+                <!-- Kontaktinfo & Google Maps -->
+                <div class="contact-info-wrapper">
+                    <h3 class="gold-text" data-i18n="info-heading">Besök Oss</h3>
+                    <p><i class="fa-solid fa-location-dot gold-icon"></i> Storgatan 12, Stockholm</p>
+                    <p><i class="fa-solid fa-phone gold-icon"></i> +46 8 123 456 78</p>
+                    <p><i class="fa-solid fa-envelope gold-icon"></i> info@kruununbeauty.se</p>
+                    <p><i class="fa-solid fa-clock gold-icon"></i> Mån - Fre: 10:00 - 18:00 | Lör: 10:00 - 15:00</p>
+                    
+                    <div class="map-container">
+                        <!-- Google Maps Embed -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.7891104886617!2d18.07119131604719!3d59.33472298166164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d5a71efbb2f%3A0x6a218f2f6b3e390!2sStorgatan%2C%20Stockholm!5e0!3m2!1ssv!2sse!4v1680000000000!5m2!1ssv!2sse" 
+                            width="100%" 
+                            height="250" 
+                            style="border:0; border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="gold-text logo-footer">Kruunun Beauty</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Kruunun Beauty. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
